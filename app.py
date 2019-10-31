@@ -71,7 +71,7 @@ app.layout = html.Div(children=[
                 dcc.Dropdown(
                     id='stats-drop',
                     options=[{'label': i, 'value': i} for i in varlist],
-                    value='Price'
+                    value=varlist[0]
                 ),
         ], className='three columns'),
         # right side
@@ -89,6 +89,8 @@ app.layout = html.Div(children=[
 )
 
 ############ Callbacks
+#@app.callback(dash.dependencies.Output('dc-map', 'figure'),
+#             [dash.dependencies.Input('dropdown', 'value')])
 
 
 
