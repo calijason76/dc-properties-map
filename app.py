@@ -91,7 +91,7 @@ app.layout = html.Div(children=[
 ############ Callbacks
 @app.callback(dash.dependencies.Output('dc-map', 'figure'),
              [dash.dependencies.Input('stats-drop', 'value')])
-def update_output('value'):
+def update_output(value):
     return fig
 
 
